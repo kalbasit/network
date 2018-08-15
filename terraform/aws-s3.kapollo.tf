@@ -1,6 +1,4 @@
-resource "aws_s3_bucket" "apollo" {
-  provider = "aws.us-east-1"
-
+resource "aws_s3_bucket" "kapollo" {
   bucket = "kapollo"
 
   lifecycle {

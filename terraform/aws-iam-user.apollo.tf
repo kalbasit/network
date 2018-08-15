@@ -12,8 +12,8 @@ data "aws_iam_policy_document" "apollo" {
     ]
 
     resources = [
-      "${aws_s3_bucket.apollo.arn}",
-      "${aws_s3_bucket.apollo.arn}/*",
+      "${aws_s3_bucket.kapollo.arn}",
+      "${aws_s3_bucket.kapollo.arn}/*",
     ]
   }
 
