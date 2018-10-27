@@ -1,7 +1,7 @@
 .PHONY: all validate get refresh apply version get-deps
 
 TERRAFORM ?= terraform
-REFRESH ?= true
+REFRESH ?= false
 
 all: apply
 
