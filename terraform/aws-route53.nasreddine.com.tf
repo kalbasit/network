@@ -149,10 +149,10 @@ resource "aws_route53_record" "aphrodite-nasreddine-com-a" {
 resource "aws_route53_record" "vpn-nasreddine-com-cname" {
   zone_id = "${aws_route53_zone.nasreddine-com.zone_id}"
   name    = "vpn.nasreddine.com"
-  type    = "CNAME"
+  type    = "A"
   ttl     = "60"
 
   records = [
-    "aphrodite.nasreddine.com",
+    "52.53.238.139",
   ]
 }
