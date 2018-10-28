@@ -66,3 +66,14 @@ resource "aws_route53_record" "yl-codes-txt" {
     "v=spf1 include:_spf.google.com ~all",
   ]
 }
+
+resource "aws_route53_record" "_keybase-yl-codes-txt" {
+  zone_id = "${aws_route53_zone.yl-codes.zone_id}"
+  name    = "_keybase.yl.codes"
+  type    = "TXT"
+  ttl     = "3600"
+
+  records = [
+    "keybase-site-verification=XP_Q8XGwtqUdGrp9SXhLgK3ghs4q81tIhXcerfOwduU",
+  ]
+}
